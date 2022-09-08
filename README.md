@@ -61,7 +61,7 @@ conda install pytorch=1.6.0 torchvision cudatoolkit=10.1 -c pytorch
 ```
 pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu101/torch1.6.0/index.html
 # or use
-# pip install mmcv-full -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.0/index.html
+# pip install mmcv-full==1.5.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.0/index.html
 ```
 Note: Make sure you mmcv version is compatible with your pytorch and cuda version.
 
