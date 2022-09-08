@@ -142,6 +142,9 @@ Please modify `./configs/ours/*` to play with your model and read `./tools/train
 
 ## Testing
 
+In order to test the model, download the trained models from [here](https://drive.google.com/drive/folders/1PYn_kT0zBGOIRSaO_5Jivaq3itrShiPT?usp=sharing) and copy them into the
+directory `./trained_models`.
+
 An example to evaluate our method with 6 groups on RUGD datasets with mIoU metrics:
 
 ```
