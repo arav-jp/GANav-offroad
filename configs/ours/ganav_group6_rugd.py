@@ -9,4 +9,4 @@ model=dict(
     auxiliary_head=dict(num_classes=6))
 
 data = dict(
-    samples_per_gpu=4)
+    samples_per_gpu=1)
