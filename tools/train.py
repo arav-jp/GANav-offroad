@@ -1,8 +1,10 @@
 import argparse
 import copy
 import os
+print(os.getcwd)
 import os.path as osp
 import time
+
 
 import mmcv
 import torch

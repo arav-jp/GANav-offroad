@@ -115,3 +115,9 @@ work_dirs/
 
 # Pytorch
 *.pth
+
+#Test folder
+display_test/
+
+#Trained models folder
+trained_models/

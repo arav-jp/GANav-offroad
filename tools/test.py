@@ -1,8 +1,10 @@
 import argparse
 import os
 
+
 import mmcv
 import torch
+import onnx
 from mmcv.parallel import MMDataParallel, MMDistributedDataParallel
 from mmcv.runner import get_dist_info, init_dist, load_checkpoint
 from mmcv.utils import DictAction
@@ -11,7 +13,7 @@ from mmseg.apis import multi_gpu_test, single_gpu_test
 from mmseg.datasets import build_dataloader, build_dataset
 from mmseg.models import build_segmentor
 
-
+ONNX_FILE_PATH = 'transnet.onnx'
 def parse_args():
     parser = argparse.ArgumentParser(
         description='mmseg test (and eval) a model')
@@ -134,6 +136,11 @@ def main():
             broadcast_buffers=False)
         outputs = multi_gpu_test(model, data_loader, args.tmpdir,
                                  args.gpu_collect, efficient_test)
+
+
+
+
+
 
     rank, _ = get_dist_info()
     if rank == 0:
